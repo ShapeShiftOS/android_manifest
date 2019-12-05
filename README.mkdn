@@ -1,0 +1,40 @@
+ExtendedUI
+===========
+
+<img src="https://raw.githubusercontent.com/Extended-UI/android_manifest/android_10/ExtendedUI-banner.jpg"> 
+
+Getting started
+---------------
+
+To get started with Android/ExtendedUI, you'll need to get
+familiar with [Repo](https://source.android.com/source/using-repo.html) and [Version Control with Git](https://source.android.com/source/version-control.html).
+
+```bash
+# Create a directory for the source files
+# You can name this directory however you want, just remember to replace
+# WORKSPACE with your directory for the rest of this guide.
+# This can be located anywhere (as long as the fs is case-sensitive)
+$ mkdir WORKSPACE
+$ cd WORKSPACE
+
+# Install Repo in the created directory
+# Use a real name/email combination, if you intend to submit patches
+$ repo init -u https://github.com/Extended-UI/android_manifest -b android_10
+# Download the source
+$ repo sync
+
+```
+
+### Build ###
+
+```bash
+
+# Set up environment
+$ . build/envsetup.sh
+
+# Choose a target
+$ lunch aosp_$device-userdebug
+
+# Build the code
+$ mka bacon -jX
+```

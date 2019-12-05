@@ -800,4 +800,6 @@
   <!-- Add all PixelExperience repos -->
   <include name="snippets/pixel.xml" />
 
+  <!-- Add all ExtendedUI repos -->
+  <include name="snippets/exui.xml" />
 </manifest>
