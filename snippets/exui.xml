@@ -37,6 +37,7 @@
   <project path="platform_testing" name="android_platform_testing" remote="exui" />
   <project path="vendor/aosp" name="android_vendor_aosp" remote="exui" />
   <project path="vendor/pixelstyle" name="android_vendor_pixelstyle" remote="exui" />
+  <project path="vendor/google/customization" name="syberia-project/platform_vendor_google_customization" remote="github" revision="10.0"/>
 
   <!-- Hardware repos -->
   <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="exui" />
