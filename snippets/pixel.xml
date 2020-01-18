@@ -29,6 +29,7 @@
 
   <!-- General repos -->
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
+  <project path="vendor/google/customization" name="vendor_google_customization" remote="pixel" />
 
   <!-- Hardware repos -->
   <project path="hardware/nxp/nfc" name="hardware_nxp_nfc" remote="pixel" />
@@ -52,6 +53,9 @@
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="pixel" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixel" />
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="pixel" />
+
+  <!-- System repos -->
+  <project path="system/apex" name="system_apex" remote="pixel" />
 
   <!-- External repos -->
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
