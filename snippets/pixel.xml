@@ -60,6 +60,7 @@
 
   <!-- System repos -->
   <project path="system/apex" name="system_apex" remote="pixel" />
+  <project path="system/hardware/interfaces" name="system_hardware_interfaces" remote="pixel" />
 
   <!-- External repos -->
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
