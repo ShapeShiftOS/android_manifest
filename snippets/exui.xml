@@ -38,12 +38,6 @@
   <project path="vendor/aosp" name="android_vendor_aosp" remote="exui" />
   <project path="vendor/pixelstyle" name="android_vendor_pixelstyle" remote="exui" />
 
-  <!-- Hardware repos -->
-  <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="exui" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="exui" />
-  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="exui" />
-  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="exui" />
-
   <!-- Packages repos -->
   <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="exui" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="exui" />
