@@ -61,6 +61,7 @@
   <project path="system/apex" name="system_apex" remote="pixel" />
 
   <!-- External repos -->
+  <project path="external/libhevc" name="external_libhevc" remote="pixel" />
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
 
 </manifest>
