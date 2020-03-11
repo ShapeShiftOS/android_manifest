@@ -16,6 +16,31 @@
   <!-- CodeAurora additions -->
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="pixel" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="pixel" />
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="pixel">
+    <!-- add guard for AOSP hardware/qcom dir -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- for AOSP sdm845, we override os_pickup.mk -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/apq8084/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8916/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8952/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8960/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8974/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8994/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/pn5xx/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/pn5xx/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="vendor/nxp/opensource/sn100x/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="vendor/nxp/opensource/sn100x/Android.mk" />
+  </project>
   <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio" remote="pixel" />
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="pixel" />
   <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="pixel" />
@@ -27,7 +52,21 @@
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="pixel" />
   <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="pixel" />
 
+  <!-- Framework repos -->
+  <project path="frameworks/opt/net/ims" name="frameworks_opt_net_ims" remote="pixel" />
+  <project path="frameworks/opt/net/wifi" name="frameworks_opt_net_wifi" remote="pixel" />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="pixel" />
+
   <!-- General repos -->
+  <project path="art" name="art" remote="pixel" />
+  <project path="build/soong" name="build_soong" remote="pixel" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="build/blueprint" name="build_blueprint" remote="pixel" />
+  <project path="bootable/recovery" name="bootable_recovery" remote="pixel" />
+  <project path="development" name="development" remote="pixel" />
+  <project path="platform_testing" name="platform_testing" remote="pixel" />
   <project path="vendor/gapps" name="vendor_gapps" remote="pixel-gitlab" clone-depth="1" />
   <project path="vendor/google/customization" name="vendor_google_customization" remote="pixel" />
 
@@ -48,6 +87,7 @@
   <project path="hardware/libhardware_legacy" name="hardware_libhardware_legacy" remote="pixel" />
 
   <!-- Packages repos -->
+  <project path="packages/apps/Bluetooth" name="packages_apps_Bluetooth" remote="pixel" />
   <project path="packages/apps/Camera2" name="packages_apps_Camera2" remote="pixel" />
   <project path="packages/apps/FMRadio" name="packages_apps_FMRadio" remote="pixel" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="pixel" />
@@ -56,11 +96,19 @@
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="pixel" />
   <project path="packages/providers/MediaProvider" name="packages_providers_MediaProvider" remote="pixel" />
   <project path="packages/services/BuiltInPrintService" name="packages_services_BuiltInPrintService" remote="pixel" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="pixel" />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="pixel" />
 
   <!-- System repos -->
   <project path="system/apex" name="system_apex" remote="pixel" />
+  <project path="system/bt" name="system_bt" remote="pixel" />
+  <project path="system/core" name="system_core" remote="pixel" />
+  <project path="system/netd" name="system_netd" remote="pixel" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
+  <project path="system/vold" name="system_vold" remote="pixel" />
 
   <!-- External repos -->
+  <project path="external/libhevc" name="external_libhevc" remote="pixel" />
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
 
 </manifest>
