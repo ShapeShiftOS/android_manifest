@@ -109,12 +109,15 @@
   <project path="system/update_engine" name="system_update_engine" remote="pixel" />
   <project path="system/vold" name="system_vold" remote="pixel" />
   <project path="system/bpf" name="system_bpf" remote="pixel" />
+  <project path="system/timezone" name="system_timezone" remote="pixel" />
 
   <!-- External repos -->
   <project path="external/libhevc" name="external_libhevc" remote="pixel" />
   <project path="external/tinycompress" name="external_tinycompress" remote="pixel" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="pixel" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="pixel" />
+  <project path="external/cldr" name="external_cldr" remote="pixel" />
+  <project path="external/icu" name="external_icu" remote="pixel" />
   <project path="external/selinux" name="external_selinux" remote="pixel" />
   <project path="external/tinyalsa" name="external_tinyalsa" remote="pixel" />
   <project path="external/toybox" name="external_toybox" remote="pixel" />
