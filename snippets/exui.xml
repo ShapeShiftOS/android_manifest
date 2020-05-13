@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="exui"
-          fetch="https://github.com/Extended-UI"
+          fetch="https://github.com/ExtendedReborn"
           revision="android_10" />
 
   <!-- Framework repos -->
