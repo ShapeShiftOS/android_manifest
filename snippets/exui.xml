@@ -25,6 +25,7 @@
   <project path="manifest" name="android_manifest" remote="exui" />
   <project path="vendor/aosp" name="android_vendor_aosp" remote="exui" />
   <project path="vendor/pixelstyle" name="android_vendor_pixelstyle" remote="exui" />
+  <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="exui" />
 
   <!-- Packages repos -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="exui" />
