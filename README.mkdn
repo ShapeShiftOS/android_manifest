@@ -1,7 +1,7 @@
 ExtendedReborn
 ===========
 
-<img src="https://github.com/ExtendedReborn/android_manifest/blob/android_10/exui-banner.jpg"> 
+<img src="https://gitcdn.link/repo/ExtendedReborn/android_manifest/android_10/exui-banner.jpg"> 
 
 Credits
 -------
