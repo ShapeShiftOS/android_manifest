@@ -1,40 +1,49 @@
-ExtendedUI
+ExtendedReborn
 ===========
 
 <img src="https://raw.githubusercontent.com/Extended-UI/android_manifest/android_10/ExtendedUI-banner.jpg"> 
 
-Getting started
----------------
+Credits
+-------
+* [**Extended-UI**](https://github.com/Extended-UI)
+* [**JDCTeam**](https://github.com/AOSP-JF-MM)
+* [**DirtyUnicorns**](https://github.com/DirtyUnicorns)
+* [**TeamSubstratum (Theme Engine)**](https://github.com/Substratum)
+* [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
+* [**Nitrogen Project**](https://github.com/nitrogen-project)
+* [**ABC ROM**](https://github.com/ezio84)
+* [**GZOSP**](https://github.com/GZOSP)
+* [**Pure Nexus**](https://github.com/PureNexusProject)
+* [**OmniROM**](https://github.com/omnirom/)
+* [**AOSPA**](https://github.com/aospa/)
+* [**BlissRoms**](https://github.com/BlissRoms)
 
-To get started with Android/ExtendedUI, you'll need to get
-familiar with [Repo](https://source.android.com/source/using-repo.html) and [Version Control with Git](https://source.android.com/source/version-control.html).
+How to Build?
+-------------
+
+To initialize your local repository using the ExtendedReborn trees, use a 
+command like this:
 
 ```bash
-# Create a directory for the source files
-# You can name this directory however you want, just remember to replace
-# WORKSPACE with your directory for the rest of this guide.
-# This can be located anywhere (as long as the fs is case-sensitive)
-$ mkdir WORKSPACE
-$ cd WORKSPACE
-
-# Install Repo in the created directory
-# Use a real name/email combination, if you intend to submit patches
-$ repo init -u https://github.com/Extended-UI/android_manifest -b android_10
-# Download the source
-$ repo sync
-
+  repo init -u git://github.com/ExtendedReborn/android_manifest.git -b android_10
 ```
-
-### Build ###
+To initialize a shallow clone, which will save even more space & time, use a command like this:
 
 ```bash
+  repo init --depth=1 -u git://github.com/ExtendedReborn/android_manifest.git -b android_10
+```
+  
+Then to sync up:
+----------------
 
-# Set up environment
-$ . build/envsetup.sh
+```bash
+  repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+Finally to build:
+-----------------
 
-# Choose a target
-$ lunch aosp_$device-userdebug
-
-# Build the code
-$ mka bacon -jX
+```bash
+  . build/envsetup.sh
+  lunch aosp_device_codename-userdebug
+  mka bacon -j$(nproc --all) | tee log.txt
 ```
