@@ -1,7 +1,7 @@
-ExtendedReborn
+ShapeShiftOS
 ===========
 
-<img src="https://i.imgur.com/urc7KCpr.png"> 
+<img src="https://i.imgur.com/CJiO8Bk.png"> 
 
 Credits
 -------
@@ -21,16 +21,16 @@ Credits
 How to Build?
 -------------
 
-To initialize your local repository using the ExtendedReborn trees, use a 
+To initialize your local repository using the ShapeShiftOS trees, use a 
 command like this:
 
 ```bash
-  repo init -u git://github.com/ExtendedReborn/android_manifest.git -b android_10
+  repo init -u git://github.com/ShapeShiftOS/android_manifest.git -b android_10
 ```
 To initialize a shallow clone, which will save even more space & time, use a command like this:
 
 ```bash
-  repo init --depth=1 -u git://github.com/ExtendedReborn/android_manifest.git -b android_10
+  repo init --depth=1 -u git://github.com/ShapeShiftOS/android_manifest.git -b android_10
 ```
   
 Then to sync up:
