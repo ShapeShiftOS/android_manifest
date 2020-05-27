@@ -39,5 +39,6 @@
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="exui" />
   <project path="external/asus/stitchimage" name="external_asus_stitchimage" remote="exui" />
   <project path="packages/apps/BlurView" name="BlurView" remote="exui" />  
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="exui" />
 
 </manifest>
