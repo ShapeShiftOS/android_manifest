@@ -21,6 +21,8 @@ Credits
 How to Build?
 -------------
 
+Please take a look at ShapeShift_Documents for bringup help with specific overlays we require on all official devices that support them.
+
 To initialize your local repository using the ShapeShiftOS trees, use a 
 command like this:
 
