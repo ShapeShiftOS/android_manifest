@@ -35,6 +35,7 @@
   <project path="packages/apps/ConfigCenter" name="android_packages_apps_ConfigCenter" remote="exui" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="exui" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="exui" />
+  <project path="vendor/oplauncher" name="android_vendor_oplauncher" remote="exui" />
   <project path="vendor/lawnchair" name="android_vendor_lawnchair" remote="exui" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="exui" />
   <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="exui" />
