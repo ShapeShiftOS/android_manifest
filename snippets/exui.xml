@@ -21,6 +21,10 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
+  <project path="build/soong" name="android_build_soong" remote="exui" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
   <project path="device/custom/sepolicy" name="android_device_custom_sepolicy" remote="exui" />
   <project path="manifest" name="android_manifest" remote="exui" />
   <project path="vendor/aosp" name="android_vendor_aosp" remote="exui" />
