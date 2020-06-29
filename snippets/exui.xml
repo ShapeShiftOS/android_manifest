@@ -29,6 +29,8 @@
   <project path="manifest" name="android_manifest" remote="exui" />
   <project path="vendor/aosp" name="android_vendor_aosp" remote="exui" />
   <project path="vendor/pixelstyle" name="android_vendor_pixelstyle" remote="exui" />
+  <project path="vendor/oplauncher" name="android_vendor_oplauncher" remote="exui" />
+  <project path="vendor/lawnchair" name="android_vendor_lawnchair" remote="exui" />
   <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="exui" />
   <project path="system/netd" name="android_system_netd" remote="exui" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="exui" />
@@ -39,11 +41,10 @@
   <project path="packages/apps/ConfigCenter" name="android_packages_apps_ConfigCenter" remote="exui" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="exui" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="exui" />
-  <project path="vendor/oplauncher" name="android_vendor_oplauncher" remote="exui" />
-  <project path="vendor/lawnchair" name="android_vendor_lawnchair" remote="exui" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="exui" />
   <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="exui" />
   <project path="packages/apps/BlurView" name="android_external_BlurView" remote="exui" />  
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="exui" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="exui" />
 
 </manifest>
