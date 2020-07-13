@@ -119,7 +119,6 @@
 
   <!-- System repos -->
   <project path="system/apex" name="system_apex" remote="pixel" />
-  <project path="system/core" name="system_core" remote="pixel" />
   <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
   <project path="system/update_engine" name="system_update_engine" remote="pixel" />
   <project path="system/vold" name="system_vold" remote="pixel" />
