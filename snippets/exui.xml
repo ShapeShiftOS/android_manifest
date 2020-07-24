@@ -4,6 +4,10 @@
   <remote name="exui"
           fetch="https://github.com/ShapeShiftOS"
           revision="android_10" />
+      
+      <remote name="kdrag0n"
+          fetch="https://github.com/kdrag0n"
+          revision="master" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="exui" />
@@ -35,7 +39,8 @@
   <project path="system/netd" name="android_system_netd" remote="exui" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="exui" />
   <project path="system/bt" name="android_system_bt" remote="exui" />
-
+  <project path="prebuilts/clang/host/linux-x86/clang-12" name="proton-clang" remote="kdrag0n" clone-depth="1" />
+  
   <!-- Packages repos -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="exui" />
   <project path="packages/apps/ConfigCenter" name="android_packages_apps_ConfigCenter" remote="exui" />
