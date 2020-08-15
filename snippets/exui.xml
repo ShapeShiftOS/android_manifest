@@ -4,6 +4,11 @@
   <remote name="exui"
           fetch="https://github.com/ShapeShiftOS"
           revision="android_10" />
+  
+  <remote  name="bb"
+           fetch="https://gitlab.com/rr-os"
+           revision="Q"
+	         review="" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="exui" />
@@ -25,6 +30,7 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
+  <project path="external/motorola/faceunlock" name="external_utils" remote="bb" />
   <project path="device/custom/sepolicy" name="android_device_custom_sepolicy" remote="exui" />
   <project path="manifest" name="android_manifest" remote="exui" />
   <project path="vendor/aosp" name="android_vendor_aosp" remote="exui" />
@@ -40,6 +46,7 @@
   <!-- Packages repos -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="exui" />
   <project path="packages/apps/ConfigCenter" name="android_packages_apps_ConfigCenter" remote="exui" />
+  <project name="packages_apps_Plugins"  path="packages/apps/Plugins"  remote="exui" />
   <project path="packages/apps/Updates" name="packages_apps_Updates" remote="exui" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="exui" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="exui" />
