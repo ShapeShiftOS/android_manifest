@@ -8,7 +8,7 @@
   <remote  name="bb"
            fetch="https://gitlab.com/rr-os"
            revision="Q"
-	         review="" />
+	   review="" />
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="exui" />
@@ -51,7 +51,6 @@
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="exui" />
   <project path="packages/apps/Snap" name="android_packages_apps_Snap" remote="exui" />
   <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="exui" />
-  <project path="packages/apps/BlurView" name="android_external_BlurView" remote="exui" />  
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="exui" />
   <project path="system/core" name="android_system_core" remote="exui" />
 
