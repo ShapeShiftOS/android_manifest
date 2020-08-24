@@ -5,6 +5,10 @@
           fetch="https://github.com/ShapeShiftOS"
           revision="android_10" />
   
+  <remote name="ssos-devices"
+          fetch="https://github.com/ShapeShiftOS-Devices"
+          revision="android_10" />
+
   <remote  name="bb"
            fetch="https://gitlab.com/rr-os"
            revision="Q"
