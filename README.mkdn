@@ -49,6 +49,3 @@ Finally to build:
   lunch aosp_device_codename-userdebug
   mka bacon -j$(nproc --all) | tee log.txt
 ```
-Note: If you get frameworks_native errors, use the caf-less branches in vendor_aosp and frameworks_native.
-
-
