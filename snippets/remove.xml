@@ -155,6 +155,7 @@
   <remove-project name="platform/packages/services/BuiltInPrintService" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
+  <remove-project name="platform/packages/apps/ThemePicker" />
 
   <!-- Prebuilts -->
   <remove-project name="platform/prebuilts/build-tools" />
