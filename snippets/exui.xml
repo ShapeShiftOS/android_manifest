@@ -13,6 +13,12 @@
            fetch="https://gitlab.com/rr-os"
            revision="Q"
 	   review="" />
+	
+  <remote  name="generic-github"
+           fetch="git://github.com/"
+           sync-c="true"
+           sync-j="8" />
+	
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="android_frameworks_av" remote="exui" />
@@ -58,5 +64,7 @@
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="exui" />
   <project path="system/core" name="android_system_core" remote="exui" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="exui" />
-
+	
+  <!-- Other additions -->
+  <project path="external/hosts" name="StevenBlack/hosts" remote="generic-github" revision="master" />	
 </manifest>
