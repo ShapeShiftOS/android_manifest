@@ -129,6 +129,7 @@
   <project path="system/vold" name="system_vold" remote="pixel" />
   <project path="system/bpf" name="system_bpf" remote="pixel" />
   <project path="system/timezone" name="system_timezone" remote="pixel" />
+  <project path="system/libufdt" name="system_libufdt" remote="pixel" />
 
   <!-- External repos -->
   <project path="external/libhevc" name="external_libhevc" remote="pixel" />
