@@ -141,6 +141,7 @@
   <project path="external/cldr" name="external_cldr" remote="pixel" />
   <project path="external/icu" name="external_icu" remote="pixel" />
   <project path="external/selinux" name="external_selinux" remote="pixel" />
+  <project path="external/sonivox" name="external_sonivox" remote="pixel" />
   <project path="external/tinyalsa" name="external_tinyalsa" remote="pixel" />
   <project path="external/toybox" name="external_toybox" remote="pixel" />
   <project path="external/libtextclassifier" name="external_libtextclassifier" remote="pixel" />
