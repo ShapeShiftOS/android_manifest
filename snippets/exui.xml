@@ -44,6 +44,8 @@
   <project path="device/custom/sepolicy" name="android_device_custom_sepolicy" remote="exui" />
   <project path="manifest" name="android_manifest" remote="exui" />
   <project path="vendor/aosp" name="android_vendor_aosp" remote="exui" />
+  <project path="vendor/oplauncher" name="android_vendor_oplauncher" remote="exui" />
+  <project path="vendor/lawnchair" name="android_vendor_lawnchair" remote="exui" />	
   <project path="vendor/pixelstyle" name="android_vendor_pixelstyle" remote="exui" />
   <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="exui" />
   <project path="system/netd" name="android_system_netd" remote="exui" />
