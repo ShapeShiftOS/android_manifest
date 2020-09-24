@@ -124,6 +124,10 @@ To initialize a shallow clone, which will save even more space & time, use a com
         echo "export USE_CCACHE=1" >> ~/.bashrc
 ```
 
+#### Setting up your trees
+
+>> Check this document [**out**](https://github.com/ShapeShiftOS/ShapeShift_Documents/blob/slave/Bringup.mkdn)
+
 ##### To build ShapeShiftOS ROM
 
 ```bash
@@ -158,7 +162,7 @@ OR
 
 ##### For those who successfully built ShapeShiftOS
 
->> Well, Congratulations on your victory! Now, you have a .zip file that flashable to your device! Share it to the internet as you wish but be sure to contribute back and also give credits to the ShapeShiftOS Team and its contributors! Also keep in mind that if an official build exists for a device, no unofficial builds should be released publicly. Do come and build ShapeShiftOS another time as source code is routinely being improved upon. If you wish to contibute, feel free to make a pull request to the ShapeShiftOS Team! See you again builder! Note: If you decide to create a thread on xda, please limit the thread to only one per device. More than one thread will not be allowed per device as it creates confusion amongst users and makes it hard for us to track bug reports.
+>> Well, Congratulations on your victory! Now, you have a .zip file that flashable to your device! Share it to the internet as you wish but be sure to contribute back and also give credits to the ShapeShiftOS Team and its contributors! Do come and build ShapeShiftOS another time as source code is routinely being improved upon. If you wish to contibute, feel free to make a pull request to the ShapeShiftOS Team! See you again builder! 
 
 -----------------------------------------	
 Getting Official Maintainership for ShapeShiftOS
