@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  
+  <!--Development-->
+  <project path="development" name="android_development" remote="ssos" />                                 <!-- done -->
+  
+  <!--ART-->
+  <project path="art" name="android_art" remote="ssos" />                                                 <!-- done -->
+  
+  <!--Bionic-->
+  <project path="bionic" name="android_bionic" remote="ssos" />                                           <!-- done -->
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="ssos" />                     <!-- done -->
+
+  <!-- Build -->
+  <project path="build/make" name="android_build" remote="ssos" groups="pdk" >                            <!-- done --> 
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="android_build_soong" remote="ssos" groups="pdk,tradefed" >            <!-- done -->
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Device -->
+  <project path="device/ssos/sepolicy" name="android_device_ssos_sepolicy" remote="ssos"  />              <!-- done -->
+
+  <!-- External -->
+  <project path="external/selinux" name="android_external_selinux" remote="ssos" />                               <!-- done -->
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="ssos" />                     <!-- done --> 
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ssos" /> <!-- done -->
+  <project path="external/zlib" name="android_external_zlib" remote="ssos" />                                     <!-- done -->
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="ssos" />                   <!-- done -->
+  <project path="external/libpng" name="android_external_libpng" remote="ssos" />                                 <!-- done -->
+  <project path="external/libcxx" name="android_external_libcxx" remote="ssos" />                                 <!-- done -->
+  <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="ssos" />                   <!-- done -->
+  <project path="external/json-c" name="android_external_json-c" remote="ssos" />                                 <!-- done -->
+  <project path="external/sqlite" name="android_external_sqlite" remote="ssos" />                                 <!-- done -->
+
+  <!-- Frameworks -->
+  <project path="frameworks/base" name="android_frameworks_base" remote="ssos" />                  <!-- done -->
+  <project path="frameworks/native" name="android_frameworks_native" remote="ssos" />              <!-- done -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="ssos" />                      <!-- done -->
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="ssos" />  <!-- done --> 
+
+  <!-- Manifest -->
+  <project path="manifest" name="android_manifest" remote="ssos" />                                <!-- done -->
+
+  <!-- Hardware -->
+  <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="ssos" />        <!-- done -->
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="ssos" />                      <!-- done -->
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ssos" />                    <!-- done -->
+  <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="ssos" />      <!-- done -->
+  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="ssos" />                            <!-- done --> 
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="ssos" />                  <!-- done --> 
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="ssos" />                          <!-- done -->
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="ssos" />                      <!-- done -->
+  <project path="hardware/ril" name="android_hardware_ril" remote="ssos" />                                    <!-- done -->
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="ssos" /> <!-- done -->
+  <project path="prebuilts/abi-dumps/ndk" name="android_prebuilts_abi-dumps_ndk" remote="ssos" />   <!-- done -->
+  <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="ssos" />   <!-- done --> 
+
+  <!-- Packages -->
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ssos" />                           <!-- done -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="ssos" />                         <!-- done --> 
+  <project path="packages/apps/Dialer" name="android_packages_apps_Dialer" remote="ssos" />                               <!-- done -->
+  <project path="packages/apps/Messaging" name="android_packages_apps_Messaging" remote="ssos" />                         <!-- done -->
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="ssos" />                                     <!-- done --> 
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ssos" />                         <!-- done --> 
+  <project path="packages/apps/DeskClock" name="android_packages_apps_DeskClock" remote="ssos" />                         <!-- done -->
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="ssos" />           <!-- done -->
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ssos" />                   <!-- done -->
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ssos" />                 <!-- done -->
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="ssos" />   <!-- done -->
+  <project path="packages/apps/Stk" name="android_packages_apps_Stk" remote="ssos" />                                     <!-- done --> 
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="ssos" />                     <!-- done -->
+  <project path="packages/apps/DocumentsUI" name="android_packages_apps_DocumentsUI" remote="ssos" />                     <!-- done -->
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="ssos" /> <!-- done -->
+
+  <!-- System -->
+  <project path="system/core" name="android_system_core" remote="ssos" />                    <!-- done -->
+  <project path="system/vold" name="android_system_vold" remote="ssos" />                    <!-- done -->
+  <project path="system/bt" name="android_system_bt" remote="ssos" />                        <!-- done -->
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="ssos" />            <!-- done -->
+  <project path="system/extras" name="android_system_extras" remote="ssos" />                <!-- done -->
+  <project path="system/qcom" name="android_system_qcom" remote="ssos" />                    <!-- done -->
+  <project path="system/update_engine" name="android_system_update_engine" remote="ssos" />  <!-- done --> 
+
+  <!-- Vendor -->
+  <project path="vendor/ssos" name="android_vendor_ssos" remote="ssos"  />       <!-- done -->
+  <project path="vendor/support" name="android_vendor_support" remote="ssos"  /> <!-- done -->
+  
+  <!-- QTI BT -->
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="ssos" />           <!-- done -->
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="ssos" />                       <!-- done -->
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="ssos" />   <!-- done -->
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="ssos" />                               <!-- done --> 
+
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ssos"  />                                          <!-- done --> 
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="ssos" />                                 <!-- done -->
+  <project path="device/qcom/sepolicy-legacy" name="android_device_qcom_sepolicy" remote="ssos" revision="android_11-legacy" />       <!-- done -->
+  <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="ssos" revision="android_11-legacy-um" /> <!-- done -->
+
+  <!-- Hardware -->
+  <project path="hardware/qcom-caf/common" name="android_hardware_qcom-caf_common" remote="ssos" >                                          <!-- done -->
+    <!-- Add guard for AOSP hardware/qcom directory. -->
+    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
+    <!-- For AOSP SDM845/SM8150, we override os_pickup.mk. -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sdm845/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom/sm8150/Android.mk" />
+    <!-- Add guards for CAF repositories. -->
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sdm845/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" /> 
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+  </project>
+  <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" revision="android_11-caf" remote="ssos" />               <!-- done --> 
+  <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="ssos" revision="android_11-caf" />                           <!-- done --> 
+  <project path="hardware/qcom-caf/camera" name="android_hardware_qcom_camera" revision="android_11-caf" remote="ssos" />                   <!-- done --> 
+  <project path="hardware/qcom-caf/keymaster" name="android_hardware_qcom_keymaster" revision="android_11-caf" remote="ssos" />             <!-- done --> 
+  <project path="hardware/qcom-caf/msm8996/audio" name="android_hardware_qcom_audio" revision="android_11-caf-8996" remote="ssos" />        <!-- done --> 
+  <project path="hardware/qcom-caf/msm8996/display" name="android_hardware_qcom_display" revision="android_11-caf-8996" remote="ssos"  />   <!-- done --> 
+  <project path="hardware/qcom-caf/msm8996/media" name="android_hardware_qcom_media" revision="android_11-caf-8996" remote="ssos" />        <!-- done --> 
+  <project path="hardware/qcom-caf/sdm845/audio" name="android_hardware_qcom_audio" revision="android_11-caf-sdm845" remote="ssos" />       <!-- done --> 
+  <project path="hardware/qcom-caf/sdm845/display" name="android_hardware_qcom_display" revision="android_11-caf-sdm845" remote="ssos"  />  <!-- done --> 
+  <project path="hardware/qcom-caf/sdm845/media" name="android_hardware_qcom_media" revision="android_11-caf-sdm845" remote="ssos" />       <!-- done --> 
+  <project path="hardware/qcom-caf/sm8150/audio" name="android_hardware_qcom_audio" revision="android_11-caf-sm8150" remote="ssos" />       <!-- done --> 
+  <project path="hardware/qcom-caf/sm8150/display" name="android_hardware_qcom_display" revision="android_11-caf-sm8150" remote="ssos"  />  <!-- done --> 
+  <project path="hardware/qcom-caf/sm8150/media" name="android_hardware_qcom_media" revision="android_11-caf-sm8150" remote="ssos" />       <!-- done --> 
+  <project path="hardware/qcom-caf/wlan" name="android_hardware_qcom_wlan" revision="android_11-caf" remote="ssos" />                       <!-- done -->
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="ssos"  />                         <!-- done -->
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="ssos" />                            <!-- done --> 
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="ssos" />                <!-- done --> 
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="ssos" />    <!-- done --> 
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="ssos" />            <!-- done --> 
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="ssos" />                <!-- done -->
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="ssos" />                          <!-- done -->
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="ssos" />                    <!-- done -->
+
+</manifest>

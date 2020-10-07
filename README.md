@@ -1,72 +1,168 @@
-Syberia Project
-====================
+ShapeShiftOS
+===========
 
-How to Build?
--------------
+<img src="https://i.imgur.com/CJiO8Bk.png"> 
 
-To initialize your local repository, use a 
-command like this:
+Credits
+-------
+* [**Extended-UI**](https://github.com/Extended-UI)
+* [**JDCTeam**](https://github.com/AOSP-JF-MM)
+* [**DirtyUnicorns**](https://github.com/DirtyUnicorns)
+* [**TeamSubstratum (Theme Engine)**](https://github.com/Substratum)
+* [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
+* [**Nitrogen Project**](https://github.com/nitrogen-project)
+* [**ABC ROM**](https://github.com/ezio84)
+* [**GZOSP**](https://github.com/GZOSP)
+* [**Pure Nexus**](https://github.com/PureNexusProject)
+* [**OmniROM**](https://github.com/omnirom/)
+* [**AOSPA**](https://github.com/aospa/)
+* [**BlissRoms**](https://github.com/BlissRoms)
 
-```bash
-  repo init -u https://github.com/syberia-project/manifest.git -b 11.0
-```
-  
-Then to sync up:
-----------------
+### How to build ShapeShiftOS ROM for your device - Tutorial
+--------
 
-```bash
-  repo sync -c -jx --force-sync --no-clone-bundle --no-tags
-```
+>> To get started with the building process, you'll need to get familiar with [Git and Repo](http://source.android.com/source/using-repo.html).
 
-   . build/envsetup.sh
-       brunch <device_name>
+### Build Environment
 
-Submitting Patches
-------------------
-Our ROM is open source, and patches are always welcome!
-You can send patches by using these commands:
+- Tested and Working on any version of Ubuntu - 14.04,14.10,15.04,16.04,18.04 (64-bit)
+- Any other distribution based of the Ubuntu Distro such as Lubuntu, Xubuntu and etc.
+- Any form of Terminal
+- Decent hardware (minimum of at least a quad core CPU and 16 GB of RAM)
+- A storage unit of any kind (We recommend utilizing SSDs as Mechanical HDDs slow down the build proccess drastically and the minimum storage size is 70GB. Having more will be useful with CCache[More on that later])
+- Required Packages should have been installed
 
-    cd <project>
-    <make edits>
-    git add -A
-    git commit -m "commit message"
-    git push ssh://<username>@gerrit.syberiaos.com:29418/syberia-project/<project> HEAD:refs/for/11.0
-
-Register at <gerrit.syberiaos.com> and use the username that you registered there in the above command
-
-Commit your patches in a single commit. Squash multiple commit using this command: git rebase -i HEAD~<# of commits>
-
-If you are going to make extra additions, just repeat steps (Don't start a new patch), but instead of git commit -m
-use git commit --amend. Gerrit will recognize it as a new patchset.
-
-To view the status of your and others patches, visit [Syberia Project Code Review](https://gerrit.syberiaos.com)
-
-Maintaining Authorship
-----------------------
-Maintaining authorship is a very important aspect of working with Open Source code. If you wish to submit a patch/fix
-from anywhere else (another ROM, project, etc.), it is imperative that you maintain the ownership of the person whose
-work you are seeking to include. Doing so will ensure that credit is given where it is deserved, and the [prinicples of open source](http://opensource.org/docs/osd)
-are upheld. Your contribution to the project will still be recognized as you will forever be listed as the committer.
-
-If you manually cherry pick a patch/fix then you will need to add the original author prior to pushing to our [gerrit](https://gerrit.syberiaos.com).
-This is a very easy task to perform, and is usually done after you commit a patch/fix locally. This is accomplished
-after you type in `git commit -a` , type in the commit message and save. You would then do the following:
+### Required Packages [this is for ubuntu 16.04, for other variants it may differ]
+##### Simply copy and paste this in a terminal window:
+>> [Hint: This command updates the Ubuntu Packages List (Install Listing) and install the required version of Java]
 
 ```bash
-git commit --amend --author "Author <email@address.com>"
+     sudo apt-get install openjdk-8-jdk
 ```
 
-So it should look like this once you get all of the author's information
+### Let that install and then proceed.
+
+### More copy and paste:
+>> [Hint: Running this command installs the other required packages to build android]
 
 ```bash
-git commit --amend --author "Spencer McGillicuddy <spencer.the.bestest@gmail.com>"
+     sudo apt-get update && sudo apt-get install bc git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk3.0-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline6-dev gcc-multilib maven tmux screen w3m ncftp adb fastboot repo python default-jdk
 ```
 
-Alternatively, adding as part of the original `git commit` message is preferred and done like the following:
+### Getting the source
+- Making required directories
+- Obtaining the repo binary
+- Adding repo binary to your path
+- Giving the repo binary proper permissions
+- Initializing an empty repo
+- Syncing the repo
+
+>> Alright, so now we’re getting there. I have outlined the basics of what we’re about to do and broke them down as I know them. This is all pretty much going to be copy/paste so it’ll be fairly difficult to screw this up :)
+
+##### Make directory for the repo binary
 
 ```bash
-git commit --author="Author <email@address.com>" -m "[commit message]"
+      mkdir ~/bin
 ```
 
-This saves time, and when part of your normal routine, prevents the infamous "ermahgerd I forgot to add authorship -
-let me fix it because I was found out!" message.
+##### Add directory for the repo binary to its path
+
+```bash
+      PATH=~/bin:$PATH
+```
+
+##### Downloading repo binary and placing it in the proper directory
+
+```bash
+      curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+```
+
+##### Giving the repo binary the proper permissions
+
+```bash
+      chmod a+x ~/bin/repo
+```
+
+##### Creating directory for where the ShapeShiftOS repo will be stored and synced
+
+```bash
+      mkdir ~/ssos
+      cd ~/ssos
+```
+
+##### Initializing the ShapeShiftOS repo and downloading the manifest
+
+```bash
+      repo init -u https://github.com/ShapeShiftOS/android_manifest.git -b android_11
+```
+
+##### Syncing the source
+>> [Hint: This might take a long time as the source is ~35GB]
+
+```bash
+      repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+```
+
+### Building the ShapeShiftOS ROM
+- Preparing Required Binaries and Device Drivers
+- Setting Up CCache (Optional)
+- Building ShapeShiftOS
+
+>> Congratulations on the succesfull build initialization! Now, we shall go ahead and prepare to build for your device!
+
+##### Setting Up CCache
+- CCache is a method of utilizing a specified storage space to speed up building. It can be referred to as the same caching your android device does to speed up application and system boot times. In this case, CCache will help build ShapeShiftOS faster than standard build times (Able to cut-down 50% of time taken to build).
+- To set up CCache, follow the following:
+
+```bash
+        echo "export USE_CCACHE=1" >> ~/.bashrc
+```
+
+##### To build ShapeShiftOS ROM
+
+```bash
+      cd ~/ssos
+      source build/envsetup.sh
+      lunch ssos_<devicecodename>-userdebug
+      make bacon -j$(nproc --all) | tee log.txt
+```
+
+##### Obtaining the zip created from the build process
+>> To get the zip file that has been built, navigate to the following directory and find for the zip file:
+
+```bash
+      cd ~/ssos/out/target/product/<devicename>
+```
+
+OR
+
+```bash
+      cd $OUT
+```
+
+>> If you found it, then congratulations! If you didn't, try retrying the build process but before doing so, ensure you do the following to make sure your next build is clean;
+
+```bash
+      cd ~/ssos
+      make clean
+      repo sync --force-sync
+```
+
+>> After doing so, redo everything stated from the Building Section.
+
+##### For those who successfully built ShapeShiftOS
+
+>> Well, Congratulations on your victory! Now, you have a .zip file that flashable to your device! Share it to the internet as you wish but be sure to contribute back and also give credits to the ShapeShiftOS Team and its contributors! Do come and build ShapeShiftOS another time as source code is routinely being improved upon. If you wish to contibute, feel free to make a pull request to the ShapeShiftOS Team! See you again builder! 
+
+-----------------------------------------	
+Getting Official Maintainership for ShapeShiftOS
+==========================================
+>> To get Official Maintainership for ShapeShiftOS you should have a stable device source with all the main components working. Read the [**charter**](https://github.com/ShapeShiftOS/Shift_Documentation/blob/slave/Charter.mkdn) to get a clearer idea.
+
+>> First make an unofficial build of ShapeShiftOS and post in [**XDA**](https://xda-developers.com) if you want to. Make sure you use the template here! Click on the raw button and change the links up where ever required.
+
+>> Then, read [**here**](https://github.com/ShapeShiftOS/ShapeShift_Documents/blob/slave/Official.mkdn)
+
+>> Join our [**Telegram Channel**](https://t.me/shapeshiftoschannel) and our  [**Telegram group**](https://t.me/shapeshiftos)
+
+----------------------------
