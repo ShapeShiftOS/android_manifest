@@ -24,6 +24,7 @@
   <project path="frameworks/av" name="android_frameworks_av" remote="exui" />
   <project path="frameworks/base" name="android_frameworks_base" remote="exui" />
   <project path="frameworks/native" name="android_frameworks_native" remote="exui" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="exui" />
 
   <!-- General repos -->
   <project path="bionic" name="android_bionic" remote="exui" />
