@@ -23,6 +23,10 @@
            revision="11"
            fetch="https://gitlab.com/saikiran2001/" />
 
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           revision="refs/heads/arrow-11.0" />
+
   <remote name="caf"
           fetch="https://source.codeaurora.org/quic/la"
           revision="refs/tags/LA.UM.8.12.r1-13900-sm8250.0" />
