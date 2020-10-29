@@ -21,7 +21,7 @@
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
 
   <!-- Proprietary inclusions -->
-  <project path="vendor/google/gms" name="android_vendor_google_gms" remote="gitlab-awaken"  />                       
+  <project path="vendor/gms" name="vendor_gms" remote="derp-gitlab" revision="11" clone-depth="1" />
   <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="gitlab-awaken"  /> 
 
 </manifest>

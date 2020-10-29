@@ -15,6 +15,9 @@
            fetch="https://github.com/ShapeShiftOS"
            revision="android_11" />
 
+  <remote name="derp-gitlab"
+          fetch="https://gitlab.com/DerpFest" />
+
   <remote  name="lineage"
            revision="lineage-18.0"
            fetch="https://github.com/LineageOS" />
