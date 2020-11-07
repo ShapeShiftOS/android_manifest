@@ -37,6 +37,7 @@
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ssos" />                      
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ssos" /> 
   <project path="external/zlib" name="android_external_zlib" remote="ssos" />                                     
+  <project path="external/scudo" name="android_external_scudo" remote="ssos" />
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="ssos" />                   
   <project path="external/libpng" name="android_external_libpng" remote="ssos" />                                 
   <project path="external/libcxx" name="android_external_libcxx" remote="ssos" />                                 
@@ -146,5 +147,6 @@
   <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="ssos" />                
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="ssos" />                          
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="ssos" />                    
+  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="ssos" />
 
 </manifest>
