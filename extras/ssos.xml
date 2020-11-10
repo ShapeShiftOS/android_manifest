@@ -50,6 +50,7 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="ssos" />              
   <project path="frameworks/av" name="android_frameworks_av" remote="ssos" />                      
   <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="ssos" />   
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ssos" />
 
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="ssos" />                                
