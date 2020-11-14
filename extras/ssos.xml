@@ -38,6 +38,7 @@
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ssos" /> 
   <project path="external/zlib" name="android_external_zlib" remote="ssos" />                                     
   <project path="external/scudo" name="android_external_scudo" remote="ssos" />
+  <project path="external/exfat" name="android_external_exfat" remote="ssos" />
   <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="ssos" />                   
   <project path="external/libpng" name="android_external_libpng" remote="ssos" />                                 
   <project path="external/libcxx" name="android_external_libcxx" remote="ssos" />                                 
@@ -50,6 +51,7 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="ssos" />                  
   <project path="frameworks/native" name="android_frameworks_native" remote="ssos" />              
   <project path="frameworks/av" name="android_frameworks_av" remote="ssos" />                      
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="ssos" />   
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ssos" />
 
   <!-- Manifest -->
@@ -100,6 +102,7 @@
   <project path="system/qcom" name="android_system_qcom" remote="ssos" />                    
   <project path="system/netd" name="android_system_netd" remote="ssos" />
   <project path="system/update_engine" name="android_system_update_engine" remote="ssos" />   
+  <project path="system/media" name="android_system_media" remote="ssos" />
   <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="ssos" />
 
   <!-- Vendor -->
