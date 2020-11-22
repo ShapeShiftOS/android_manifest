@@ -60,6 +60,14 @@
   <remove-project name="device/google/sunfish" />
   <remove-project name="device/google/sunfish-kernel" />
   <remove-project name="device/google/sunfish-sepolicy" />
+  <remove-project name="device/google/redfin" />
+  <remove-project name="device/google/redfin-kernel" />
+  <remove-project name="device/google/redfin-sepolicy" />
+  <remove-project name="device/google/redbull" />
+  <remove-project name="device/google/redbull-sepolicy" />
+  <remove-project name="device/google/bramble" />
+  <remove-project name="device/google/bramble-kernel" />
+  <remove-project name="device/google/bramble-sepolicy" />
   <remove-project name="device/mediatek/wembley-sepolicy" />
   <remove-project name="device/google/trout" />
   <remove-project name="device/google/vrservices" />
@@ -88,12 +96,6 @@
 
   <!-- External -->
   <remove-project name="platform/external/arm-optimized-routines" />
-  <remove-project name="platform/external/google-fonts/arbutus-slab" />
-  <remove-project name="platform/external/google-fonts/arvo" />
-  <remove-project name="platform/external/google-fonts/barlow" />
-  <remove-project name="platform/external/google-fonts/lato" />
-  <remove-project name="platform/external/google-fonts/rubik" />
-  <remove-project name="platform/external/google-fonts/zilla-slab" />
   <remove-project name="platform/external/libjpeg-turbo" />
   <remove-project name="platform/external/libpng" />
   <remove-project name="platform/external/selinux" />
