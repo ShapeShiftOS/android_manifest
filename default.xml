@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- GitHub (Project-Awaken) -->
+  <remote  name="awaken"
+           revision="11"
+           fetch="https://github.com/Project-Awaken/" />
+
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
