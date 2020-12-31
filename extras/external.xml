@@ -30,7 +30,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" clone-depth="1" remote="awaken" />
 
   <!-- Proprietary inclusions -->
-  <project path="vendor/gapps" name="android_vendor_gapps" remote="gitlab-ashutosh"  />
+  <project path="vendor/gapps" name="vendor_gapps" remote="gitlab-ashutosh" clone-depth="1"  />
   <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="gitlab-awaken"  /> 
 
 </manifest>
