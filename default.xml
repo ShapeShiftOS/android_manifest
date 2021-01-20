@@ -24,9 +24,9 @@
           fetch="https://gitlab.com/DerpFest" />
 
   <remote  name="lineage"
-           revision="lineage-18.0"
+           revision="lineage-18.1"
            fetch="https://github.com/LineageOS" />
-  
+
   <remote  name="gitlab-awaken"
            revision="11"
            fetch="https://gitlab.com/saikiran2001/" />
