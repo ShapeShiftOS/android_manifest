@@ -31,6 +31,10 @@
 
   <!-- Proprietary inclusions -->
   <project path="vendor/gapps" name="vendor_gapps" remote="gitlab-ashutosh" clone-depth="1"  />
-  <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="gitlab-awaken"  /> 
+  <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="gitlab-awaken"  />
+
+  <!-- System -->
+  <project path="system/libhwbinder" name="android_system_libhwbinder" remote="awaken" />
+  <project path="system/iorap" name="android_system_iorap" remote="awaken" />
 
 </manifest>
