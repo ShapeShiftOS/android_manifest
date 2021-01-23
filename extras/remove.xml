@@ -101,6 +101,8 @@
   <remove-project name="platform/external/freetype" />
   <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/sqlite" />
+  <remove-project name="platform/external/e2fsprogs" />
+  <remove-project name="platform/external/gptfdisk" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
