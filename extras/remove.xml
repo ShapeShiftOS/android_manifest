@@ -164,6 +164,8 @@
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/iorap" />
   <remove-project name="platform/system/libhwbinder" />
+  <remove-project name="platform/system/bpf" />
+  <remove-project name="platform/system/bpfprogs" />
 
   <!-- Tools -->
   <remove-project name="platform/tools/metalava" />
