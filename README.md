@@ -1,7 +1,7 @@
 ShapeShiftOS
 ===========
 
-<img src="https://i.imgur.com/CJiO8Bk.png"> 
+<img src="https://i.imgur.com/OkwHNS3.jpg"> 
 
 Credits
 -------
