@@ -5,18 +5,22 @@ ShapeShiftOS
 
 Credits
 -------
-* [**Extended-UI**](https://github.com/Extended-UI)
-* [**JDCTeam**](https://github.com/AOSP-JF-MM)
-* [**DirtyUnicorns**](https://github.com/DirtyUnicorns)
-* [**TeamSubstratum (Theme Engine)**](https://github.com/Substratum)
+
 * [**LineageOS/Cyanogenmod**](https://github.com/LineageOS)
-* [**Nitrogen Project**](https://github.com/nitrogen-project)
 * [**ABC ROM**](https://github.com/ezio84)
-* [**GZOSP**](https://github.com/GZOSP)
-* [**Pure Nexus**](https://github.com/PureNexusProject)
-* [**OmniROM**](https://github.com/omnirom/)
+* [**Pixel Experience**](https://github.com/PixelExperience)
+* [**DirtyUnicorns**](https://github.com/DirtyUnicorns)
 * [**AOSPA**](https://github.com/aospa/)
+* [**Nitrogen Project**](https://github.com/nitrogen-project)
+* [**Extended-UI**](https://github.com/Extended-UI)
+* [**OmniROM**](https://github.com/omnirom/)
 * [**BlissRoms**](https://github.com/BlissRoms)
+* [**POSP**](https://github.com/PotatoProject)
+* [**Evolution-X**](https://github.com/Evolution-X)
+* [**Syberia-Project**](https://github.com/syberia-project)
+* [**Project Awaken**](https://github.com/Project-Awaken)
+* [**Project Fluid**](https://github.com/Project-Fluid)
+* [**WaveOS**](https://github.com/wave-project)
 
 ### How to build ShapeShiftOS ROM for your device - Tutorial
 --------
