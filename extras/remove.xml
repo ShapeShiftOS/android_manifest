@@ -91,6 +91,10 @@
   <remove-project name="platform/hardware/ril" />
 
   <!-- External -->
+  <remove-project name="platform/external/boringssl" />
+  <remove-project name="platform/external/cldr" />
+  <remove-project name="platform/external/icu" />
+  <remove-project name="platform/external/perfetto" />
   <remove-project name="platform/external/arm-optimized-routines" />
   <remove-project name="platform/external/libjpeg-turbo" />
   <remove-project name="platform/external/libpng" />
@@ -103,6 +107,7 @@
   <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/toybox" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
@@ -166,6 +171,8 @@
   <remove-project name="platform/system/libhwbinder" />
   <remove-project name="platform/system/bpf" />
   <remove-project name="platform/system/bpfprogs" />
+  <remove-project name="platform/system/timezone" />
+  <remove-project name="platform/system/memory/lmkd" />
 
   <!-- Tools -->
   <remove-project name="platform/tools/metalava" />
