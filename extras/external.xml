@@ -28,6 +28,7 @@
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="lineage" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="lineage" />
   <project path="external/toybox" name="android_external_toybox" remote="awaken" />
+  <project path="external/cpu_features" name="android_external_cpu_features" remote="awaken" />
 
   <!-- Packages -->
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
