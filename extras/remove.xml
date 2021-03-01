@@ -109,6 +109,8 @@
   <remove-project name="platform/external/gptfdisk" />
   <remove-project name="platform/external/toybox" />
   <remove-project name="platform/external/cpu_features" />
+  <remove-project name="platform/external/libyuv" />
+  <remove-project name="platform/external/libvpx" />
 
   <!-- Frameworks -->
   <remove-project name="platform/frameworks/base" />
