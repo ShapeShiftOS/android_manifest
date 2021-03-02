@@ -32,7 +32,6 @@
   <project path="external/toybox" name="android_external_toybox" remote="awaken" />
   <project path="external/cpu_features" name="android_external_cpu_features" remote="awaken" />
   <project path="external/libvpx" name="android_external_libvpx" remote="awaken" />
-  <project path="external/libyuv" name="android_external_libyuv" remote="awaken" />
 
   <!-- Packages -->
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
