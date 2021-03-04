@@ -39,6 +39,7 @@
   <!-- Prebuilts -->
   <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="android_prebuilts_gcc_linux-x86_host_x86_64-linux-glibc2.17-4.8" clone-depth="1" remote="awaken" />
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="android_platform_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" clone-depth="1" remote="awaken" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" clone-depth="1" remote="lineage" />
 
   <!-- Proprietary inclusions -->
   <project path="vendor/gapps" name="vendor_gapps" remote="gitlab-ashutosh" clone-depth="1"  />
