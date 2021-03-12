@@ -46,7 +46,8 @@
 
   <!-- Proprietary inclusions -->
   <project path="vendor/gapps" name="vendor_gapps" remote="gitlab-ashutosh" clone-depth="1"  />
-  <project path="external/motorola/faceunlock" name="android_external_motorola_faceunlock" remote="gitlab-awaken"  />
+  <project path="external/faceunlock" name="external_faceunlock" remote="fluid-gitlab" />
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_faceunlockservice" remote="fluid-gitlab" />
 
   <!-- System -->
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="awaken" />

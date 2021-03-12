@@ -20,6 +20,10 @@
            fetch="https://github.com/ShapeShiftOS"
            revision="android_11" />
 
+  <remote  name="fluid-gitlab"
+           fetch="https://gitlab.com/project-fluid/"
+           revision="fluid-11" />
+
   <remote name="derp-gitlab"
           fetch="https://gitlab.com/DerpFest" />
 
