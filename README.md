@@ -101,7 +101,7 @@ Credits
 ```
 
 ##### Syncing the source
->> [Hint: This might take a long time as the source is ~35GB]
+>> [Hint: This might take a long time as the source is ~75GB]
 
 ```bash
       repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
@@ -112,7 +112,7 @@ Credits
 - Setting Up CCache (Optional)
 - Building ShapeShiftOS
 
->> Congratulations on the succesfull build initialization! Now, we shall go ahead and prepare to build for your device!
+>> Congratulations on the successful build initialization! Now, we shall go ahead and prepare to build for your device!
 
 ##### Setting Up CCache
 - CCache is a method of utilizing a specified storage space to speed up building. It can be referred to as the same caching your android device does to speed up application and system boot times. In this case, CCache will help build ShapeShiftOS faster than standard build times (Able to cut-down 50% of time taken to build).
