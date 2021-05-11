@@ -104,7 +104,7 @@ Credits
 >> [Hint: This might take a long time as the source is ~75GB]
 
 ```bash
-      repo sync -c -q --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+      repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 
 ### Building the ShapeShiftOS ROM
