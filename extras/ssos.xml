@@ -152,7 +152,7 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
     <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
-	</project>
+  </project>
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" revision="android_11-caf" remote="ssos" />                
   <project path="hardware/qcom-caf/thermal" name="android_hardware_qcom-caf_thermal" remote="ssos" />
   <project path="hardware/qcom-caf/bt" name="android_hardware_qcom_bt" remote="ssos" revision="android_11-caf" />                            
