@@ -20,16 +20,20 @@
            fetch="https://github.com/ShapeShiftOS"
            revision="android_11" />
 
-  <remote  name="fluid-gitlab"
-           fetch="https://gitlab.com/project-fluid/"
-           revision="fluid-11" />
-
   <remote name="derp-gitlab"
           fetch="https://gitlab.com/DerpFest" />
 
   <remote  name="lineage"
            revision="lineage-18.1"
            fetch="https://github.com/LineageOS" />
+
+  <remote name="pixel-gitlab-self-hosted"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="eleven" />
+
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="eleven" />
 
   <remote  name="gitlab-awaken"
            revision="11"
