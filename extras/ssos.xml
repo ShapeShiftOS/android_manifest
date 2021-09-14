@@ -33,6 +33,7 @@
   <project path="device/ssos/sepolicy" name="android_device_ssos_sepolicy" remote="ssos"  />              
 
   <!-- External -->
+  <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="ssos" />
   <project path="external/selinux" name="android_external_selinux" remote="ssos" />                               
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ssos" />                      
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ssos" /> 
