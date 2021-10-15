@@ -31,7 +31,11 @@
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="ssos-staging" />
 
   <!-- packages repos -->
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ssos-staging" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ssos-staging" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="ssos-staging" />
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="ssos-staging" />
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="ssos-staging" />
 
   <!-- system repos -->
   <project path="system/core" name="android_system_core" remote="ssos-staging" />
