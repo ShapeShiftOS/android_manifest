@@ -20,6 +20,11 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Device -->
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ssos-staging"  /> 
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="ssos-staging"  /> 
+  <project path="device/ssos/sepolicy" name="android_device_ssos_sepolicy" remote="ssos-staging"  /> 
+
   <!-- external repos -->
   <project path="external/selinux" name="android_external_selinux" remote="ssos-staging" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ssos-staging" />
