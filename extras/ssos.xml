@@ -24,6 +24,11 @@
   <project path="external/selinux" name="android_external_selinux" remote="ssos-staging" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ssos-staging" />
 
+  <!-- framework repos -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="ssos-staging" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ssos-staging" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ssos-staging" />
+
   <!-- hardware repos -->
   <project path="hardware/ril" name="android_hardware_ril" groups="pdk" remote="ssos-staging" />
   <project path="hardware/interfaces" name="android_hardware_interfaces" remote="ssos-staging" />
