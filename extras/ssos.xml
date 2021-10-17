@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+  <!-- art repo -->
+  <project path="art" name="android_art" groups="pdk" remote="ssos-staging" />
+
   <!-- bionic repo -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="ssos-staging" />
 
