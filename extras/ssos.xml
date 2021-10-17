@@ -29,6 +29,8 @@
   <project path="device/ssos/sepolicy" name="android_device_ssos_sepolicy" remote="ssos"  /> 
 
   <!-- external repos -->
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="ssos" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="ssos" />
   <project path="external/selinux" name="android_external_selinux" remote="ssos" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ssos" />
 
