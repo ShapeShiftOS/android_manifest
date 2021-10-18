@@ -63,5 +63,6 @@
 
   <!-- Vendor -->
   <project path="vendor/ssos" name="android_vendor_ssos" remote="ssos" />
+  <project path="vendor/support" name="android_vendor_support" remote="ssos" />
 
 </manifest>
