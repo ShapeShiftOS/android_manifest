@@ -68,6 +68,8 @@
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="ssos" />
   <project path="system/media" name="android_system_media" remote="ssos" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="ssos" />
+  <project path="system/vold" name="android_system_vold" remote="ssos" />
+  <project path="system/security" name="android_system_security" remote="ssos" />
 
   <!-- Vendor -->
   <project path="vendor/ssos" name="android_vendor_ssos" remote="ssos" />
