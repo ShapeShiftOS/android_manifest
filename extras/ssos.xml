@@ -6,6 +6,7 @@
 
   <!-- bionic repo -->
   <project path="bionic" name="android_bionic" groups="pdk" remote="ssos" />
+  <project path="bootable/recovery" name="android_bootable_recovery" groups="pdk" remote="ssos" />
 
   <!-- Build -->
   <project path="manifest" name="android_manifest" remote="ssos" />
