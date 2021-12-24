@@ -117,6 +117,7 @@
   <project path="system/sepolicy" name="android_system_sepolicy" remote="ssos" />
   <project path="system/vold" name="android_system_vold" remote="ssos" />
   <project path="system/security" name="android_system_security" remote="ssos" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="ssos" />
 
   <!-- Vendor -->
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="ssos" />
