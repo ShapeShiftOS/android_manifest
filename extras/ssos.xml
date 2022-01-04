@@ -120,6 +120,7 @@
   <project path="system/update_engine" name="android_system_update_engine" remote="ssos" />
 
   <!-- Vendor -->
+  <project path="vendor/gms" name="android_vendor_gms" remote="awaken" clone-depth="1" />
   <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="ssos" />
   <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="ssos" />
   <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="ssos" />
