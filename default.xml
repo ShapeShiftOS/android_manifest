@@ -13,6 +13,10 @@
            revision="12"
            fetch="https://gitlab.com/Project-Awaken/" />
 
+  <remote  name="ssos-gitlab"
+           revision="android_12"
+           fetch="https://gitlab.com/AshutoshSundresh/" />
+
   <remote  name="proton" 
            fetch="https://github.com/ProtonAOSP" 
            revision="sc" />

@@ -23,7 +23,7 @@
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
 
   <!-- Vendor -->
-  <project path="vendor/gms" name="android_vendor_gms" remote="awaken-gitlab" clone-depth="1" />
+  <project path="vendor/gms" name="vendor_gms" remote="ssos-gitlab" clone-depth="1" />
   <project name="android_vendor_lawnicons" path="vendor/lawnicons" remote="proton" />
 
 </manifest>
