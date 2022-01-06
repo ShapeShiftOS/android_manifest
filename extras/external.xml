@@ -24,6 +24,5 @@
 
   <!-- Vendor -->
   <project path="vendor/gms" name="vendor_gms" remote="ssos-gitlab" clone-depth="1" />
-  <project name="android_vendor_lawnicons" path="vendor/lawnicons" remote="proton" />
 
 </manifest>
