@@ -21,6 +21,7 @@
   <!-- Packages -->
   <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" />
   <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+  <project path="packages/apps/GrapheneOS-Camera" name="AOSP-Krypton/packages_apps_GrapheneOS-Camera" remote="github" revision="main" />
 
   <!-- Vendor -->
   <project path="vendor/gms" name="vendor_gms" remote="ssos-gitlab" clone-depth="1" />
