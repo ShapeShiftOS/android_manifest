@@ -5,47 +5,23 @@
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
 
-  <remote  name="arrow"
-           fetch="https://github.com/ArrowOS"
-           revision="refs/heads/arrow-12.0" />
-
-  <remote  name="awaken-gitlab"
-           revision="12"
-           fetch="https://gitlab.com/Project-Awaken/" />
-
   <remote  name="ssos-gitlab"
            revision="android_12"
            fetch="https://gitlab.com/AshutoshSundresh/" />
 
-  <remote  name="proton" 
-           fetch="https://github.com/ProtonAOSP" 
-           revision="sc" />
+  <remote  name="ssos"
+           fetch="https://github.com/ShapeShiftOS"
+           revision="refs/heads/android_12" />
+
+  <remote  name="ShapeShiftOS-Devices"
+           fetch="https://github.com/ShapeShiftOS-Devices"
+           revision="refs/heads/android_12" />
 
   <remote  name="github"
            fetch="https://github.com/" />
 
   <remote  name="gitlab"
            fetch="https://gitlab.com/" />
-
-  <remote  name="ssos"
-           fetch="https://github.com/ShapeShiftOS"
-           revision="refs/heads/android_12" />
-
-  <remote  name="ssos-11"
-           fetch="https://github.com/ShapeShiftOS"
-           revision="refs/heads/android_11" />
-
-  <remote  name="ShapeShiftOS-Devices"
-           fetch="https://github.com/ShapeShiftOS-Devices"
-           revision="refs/heads/android_12" />
-
-  <remote  name="ssos-staging"
-           fetch="https://github.com/ShapeShiftOS-WIP"
-           revision="refs/heads/android_12" />
-
-  <remote  name="lineage"
-           revision="lineage-19.0"
-           fetch="https://github.com/LineageOS" />
 
   <default revision="refs/tags/android-12.0.0_r32"
            remote="aosp" />

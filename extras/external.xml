@@ -3,24 +3,24 @@
   <!-- track repositories from other ROMs -->
 
   <!-- system repos -->
-  <project path="system/libziparchive" name="android_system_libziparchive" remote="arrow" />
-  <project path="system/qcom" name="android_system_qcom" remote="arrow" />
-  <project path="system/tools/mkbootimg" name="android_system_tools_mkbootimg" remote="arrow" />
+  <project path="system/libziparchive" name="ArrowOS/android_system_libziparchive" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="system/qcom" name="ArrowOS/android_system_qcom" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="system/tools/mkbootimg" name="ArrowOS/android_system_tools_mkbootimg" revision="refs/heads/arrow-12.0" remote="github" />
 
   <!-- external repos -->
-  <project path="external/ant-wireless/ant_client" name="android_external_ant-wireless_ant_client" remote="arrow" />
-  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="arrow" />
-  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="arrow" />
-  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="arrow" />
-  <project path="external/ant-wireless/hidl" name="android_external_ant-wireless_hidl" remote="arrow" />
-  <project path="external/exfatprogs" name="android_external_exfatprogs" remote="arrow" />
-  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="arrow" />
-  <project path="external/json-c" name="android_external_json-c" remote="arrow" />
-  <project path="external/tinyxml" name="android_external_tinyxml" remote="arrow" />
+  <project path="external/ant-wireless/ant_client" name="ArrowOS/android_external_ant-wireless_ant_client" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/ant-wireless/ant_native" name="ArrowOS/android_external_ant-wireless_ant_native" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/ant-wireless/ant_service" name="ArrowOS/android_external_ant-wireless_ant_service" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/ant-wireless/antradio-library" name="ArrowOS/android_external_ant-wireless_antradio-library" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/ant-wireless/hidl" name="ArrowOS/android_external_ant-wireless_hidl" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/exfatprogs" name="ArrowOS/android_external_exfatprogs" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/ntfs-3g" name="ArrowOS/android_external_ntfs-3g" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/json-c" name="ArrowOS/android_external_json-c" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/tinyxml" name="ArrowOS/android_external_tinyxml" revision="refs/heads/arrow-12.0" remote="github" />
 
   <!-- Packages -->
-  <project name="android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="proton" />
-  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+  <project name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="github" revision="sc" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.0" />
   <project path="packages/apps/GrapheneOS-Camera" name="AOSP-Krypton/packages_apps_GrapheneOS-Camera" remote="github" revision="main" />
 
   <!-- Vendor -->
