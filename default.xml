@@ -11,7 +11,7 @@
 
   <remote  name="ssos"
            fetch="https://github.com/ShapeShiftOS"
-           revision="refs/heads/android_12" />
+           revision="android_12" />
 
   <remote  name="ShapeShiftOS-Devices"
            fetch="https://github.com/ShapeShiftOS-Devices"

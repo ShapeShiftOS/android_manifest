@@ -19,11 +19,8 @@
   <project path="external/tinyxml" name="ArrowOS/android_external_tinyxml" revision="refs/heads/arrow-12.0" remote="github" />
 
   <!-- Packages -->
-  <project name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" path="packages/apps/SimpleDeviceConfig" remote="github" revision="sc" />
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" remote="github" revision="lineage-19.0" />
-  <project path="packages/apps/GrapheneOS-Camera" name="AOSP-Krypton/packages_apps_GrapheneOS-Camera" remote="github" revision="main" />
-
-  <!-- Vendor -->
-  <project path="vendor/gms" name="vendor_gms" remote="ssos-gitlab" clone-depth="1" />
+  <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" revision="sc" remote="github" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-19.0" remote="github" />
+  <project path="packages/apps/GrapheneOS-Camera" name="AOSP-Krypton/packages_apps_GrapheneOS-Camera" revision="main" remote="github" />
 
 </manifest>

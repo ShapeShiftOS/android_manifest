@@ -105,6 +105,7 @@
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="ssos" />
   <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk" remote="ssos" />
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="ssos" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ssos" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ssos" />
 
   <!-- prebuilts -->
@@ -140,8 +141,9 @@
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="ssos" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="ssos" />
   <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="ssos" />
-  <project name="android_vendor_lawnicons" path="vendor/lawnicons" remote="ssos" />
+  <project path="vendor/lawnicons" name="android_vendor_lawnicons" remote="ssos" />
   <project path="vendor/ssos" name="android_vendor_ssos" remote="ssos" />
   <project path="vendor/support" name="android_vendor_support" remote="ssos" />
+  <project path="vendor/gms" name="vendor_gms" remote="ssos-gitlab" clone-depth="1" />
 
 </manifest>
