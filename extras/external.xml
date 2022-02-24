@@ -24,7 +24,7 @@
   <project path="packages/apps/GrapheneOS-Camera" name="AOSP-Krypton/packages_apps_GrapheneOS-Camera" revision="main" remote="github" />
 
   <!-- Vendor -->
-  <project path="vendor/qrcode/zxing" name="journeyapps/zxing-android-embedded" remote="github" revision="master" >
+  <project path="vendor/qrcode/zxing" name="AshutoshSundresh/zxing-android-embedded" remote="github" revision="master" >
     <linkfile src="zxing-android-embedded/res-orig/*" dest="vendor/support/res-orig" />
     <linkfile src="zxing-android-embedded/res/*" dest="vendor/support/res-qr" />
     <linkfile src="zxing-android-embedded/src/com/google/zxing/*" dest="vendor/support/src/com/google/zxing" />
