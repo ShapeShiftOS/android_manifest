@@ -21,7 +21,7 @@
   <!-- Packages -->
   <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" revision="sc" remote="github" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-19.0" remote="github" />
-  <project path="packages/apps/GrapheneOS-Camera" name="AOSP-Krypton/packages_apps_GrapheneOS-Camera" revision="main" remote="github" />
+  <project path="packages/apps/GrapheneOS-Camera" name="GrapheneOS/platform_external_Camera" revision="12" remote="github" />
 
   <!-- Vendor -->
   <project path="vendor/qrcode/zxing" name="AshutoshSundresh/zxing-android-embedded" remote="github" revision="master" >
