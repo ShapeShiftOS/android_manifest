@@ -24,6 +24,14 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Bluetooth -->
+  <project path="packages/apps/Bluetooth" name="android_packages_apps_Bluetooth" remote="ssos" />
+  <project path="system/bt" name="android_system_bt" remote="ssos" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom_opensource_bluetooth-commonsys-intf" remote="ssos" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth_ext" name="android_vendor_qcom_opensource_bluetooth_ext" remote="ssos" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom_opensource_packages_apps_Bluetooth" remote="ssos" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt" remote="ssos" />
+
   <!-- Device -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ssos"  /> 
   <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="ssos"  />
@@ -33,9 +41,11 @@
 
   <!-- external repos -->
   <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="ssos" />
+  <project path="external/fastrpc" name="android_external_fastrpc" remote="ssos" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="ssos" />
   <project path="external/selinux" name="android_external_selinux" remote="ssos" />
   <project path="external/mksh" name="android_external_mksh" remote="ssos" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="ssos" />
   <project path="external/tinycompress" name="android_external_tinycompress" remote="ssos" />
 
   <!-- framework repos -->
@@ -43,6 +53,7 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="ssos" />
   <project path="frameworks/native" name="android_frameworks_native" remote="ssos" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="ssos" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="ssos" />
 
   <!-- hardware repos -->
   <project path="hardware/qcom-caf/bootctrl" name="android_hardware_qcom_bootctrl" groups="qcom,pdk-qcom" remote="ssos" revision="android_12-caf" />
@@ -96,7 +107,7 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ssos" />
   <project path="hardware/libhardware_legacy" name="android_hardware_libhardware_legacy" remote="ssos" />
 
-  <!-- packages repos -->
+  <!-- apps repos -->
   <project path="packages/apps/Camera2" name="android_packages_apps_Camera2" remote="ssos" />
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="ssos" />
   <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="ssos" />
@@ -104,8 +115,15 @@
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="ssos" />
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="ssos" />
   <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="ssos" />
+
+  <!-- modules repos -->
   <project path="packages/modules/adb" name="android_packages_modules_adb" groups="pdk" remote="ssos" />
+  <project path="packages/modules/Permission" name="android_packages_modules_Permission" remote="ssos" />
+
+  <!-- providers repos -->
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" remote="ssos" />
+
+  <!-- services repos -->
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ssos" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ssos" />
 
@@ -113,6 +131,7 @@
   <project path="prebuilts/tools-ssos" name="android_prebuilts_tools-ssos" remote="ssos" />
   
   <!-- system repos -->
+  <project path="system/apex" name="android_system_apex" remote="ssos" />
   <project path="system/core" name="android_system_core" remote="ssos" />
   <project path="system/libhwbinder" name="android_system_libhwbinder" remote="ssos" />
   <project path="system/media" name="android_system_media" remote="ssos" />
@@ -122,26 +141,7 @@
   <project path="system/update_engine" name="android_system_update_engine" remote="ssos" />
 
   <!-- Vendor -->
-  <project path="vendor/nxp/opensource/interfaces/nfc" name="android_vendor_nxp_interfaces_opensource_nfc" remote="ssos" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="ssos" />
-  <project path="vendor/nxp/opensource/commonsys/frameworks" name="android_vendor_nxp_opensource_frameworks" remote="ssos" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="ssos" />
-  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="ssos" revision="android_12-pn5xx" />
-  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="ssos" revision="android_12-pn5xx" />
-  <project path="vendor/nxp/opensource/sn100x/halimpl" name="android_vendor_nxp_opensource_halimpl" remote="ssos" revision="android_12-sn100x" />
-  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="android_vendor_nxp_opensource_hidlimpl" remote="ssos" revision="android_12-sn100x" />
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="ssos" />
-  <project path="vendor/qcom/opensource/audio" name="android_vendor_qcom_opensource_audio" remote="ssos" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" remote="ssos" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="ssos" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="ssos" />
-  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="ssos"/>
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="ssos" />
-  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" remote="ssos" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" remote="ssos" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" remote="ssos" />
-  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" remote="ssos" />
-  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" remote="ssos" />
   <project path="vendor/lawnicons" name="android_vendor_lawnicons" remote="ssos" />
   <project path="vendor/ssos" name="android_vendor_ssos" remote="ssos" />
   <project path="vendor/support" name="android_vendor_support" remote="ssos" />

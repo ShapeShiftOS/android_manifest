@@ -3,26 +3,70 @@
   <!-- track repositories from other ROMs -->
 
   <!-- system repos -->
-  <project path="system/libziparchive" name="ArrowOS/android_system_libziparchive" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="system/qcom" name="ArrowOS/android_system_qcom" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="system/tools/mkbootimg" name="ArrowOS/android_system_tools_mkbootimg" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="system/libziparchive" name="LineageOS/android_system_libziparchive" revision="refs/heads/lineage-19.1" remote="github" />
+  <project path="system/qcom" name="LineageOS/android_system_qcom" revision="refs/heads/lineage-19.1" remote="github" />
+  <project path="system/tools/mkbootimg" name="ArrowOS/android_system_tools_mkbootimg" revision="refs/heads/arrow-12.1" remote="github" />
 
   <!-- external repos -->
-  <project path="external/ant-wireless/ant_client" name="ArrowOS/android_external_ant-wireless_ant_client" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="external/ant-wireless/ant_native" name="ArrowOS/android_external_ant-wireless_ant_native" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="external/ant-wireless/ant_service" name="ArrowOS/android_external_ant-wireless_ant_service" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/ant-wireless/ant_client" name="LineageOS/android_external_ant-wireless_ant_client" revision="refs/heads/lineage-19.1" remote="github" />
+  <project path="external/ant-wireless/ant_native" name="LineageOS/android_external_ant-wireless_ant_native" revision="refs/heads/lineage-19.1" remote="github" />
+  <project path="external/ant-wireless/ant_service" name="LineageOS/android_external_ant-wireless_ant_service" revision="refs/heads/lineage-19.1" remote="github" />
   <project path="external/ant-wireless/antradio-library" name="ArrowOS/android_external_ant-wireless_antradio-library" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="external/ant-wireless/hidl" name="ArrowOS/android_external_ant-wireless_hidl" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="external/exfatprogs" name="ArrowOS/android_external_exfatprogs" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="external/ntfs-3g" name="ArrowOS/android_external_ntfs-3g" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="external/json-c" name="ArrowOS/android_external_json-c" revision="refs/heads/arrow-12.0" remote="github" />
-  <project path="external/tinyxml" name="ArrowOS/android_external_tinyxml" revision="refs/heads/arrow-12.0" remote="github" />
+  <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" revision="refs/heads/lineage-19.1" remote="github" />
+  <project path="external/exfatprogs" name="ArrowOS/android_external_exfatprogs" revision="refs/heads/arrow-12.1" remote="github" />
+  <project path="external/libcxx" name="LineageOS/android_external_libcxx" revision="refs/heads/lineage-19.1" remote="github" />
+  <project path="external/ntfs-3g" name="ArrowOS/android_external_ntfs-3g" revision="refs/heads/arrow-12.1" remote="github" />
+  <project path="external/openssh" name="LineageOS/android_external_openssh" revision="refs/heads/lineage-19.1" remote="github" />
+  <project path="external/json-c" name="ArrowOS/android_external_json-c" revision="refs/heads/arrow-12.1" remote="github" />
+  <project path="external/tinyxml" name="ArrowOS/android_external_tinyxml" revision="refs/heads/arrow-12.1" remote="github" />
+  <project path="external/wpa_supplicant_8" name="LineageOS/android_external_wpa_supplicant_8" revision="refs/heads/lineage-19.1" remote="github" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom/audio" name="LineageOS/android_hardware_qcom_audio" revision="lineage-19.1" remote="github" />
+  <project path="hardware/qcom/data/ipacfg-mgr" name="LineageOS/android_hardware_qcom_data_ipacfg-mgr" revision="lineage-19.1" remote="github" />
+  <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" revision="lineage-18.1" remote="github" />
+  <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" revision="lineage-18.1" remote="github" />
+  <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" revision="lineage-18.1" remote="github" />
+  <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-19.1-caf" remote="github" />
+  <project path="hardware/qcom-caf/vr" name="LineageOS/android_hardware_qcom_vr" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
 
   <!-- Packages -->
-  <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" revision="sc" remote="github" />
-  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-19.0" remote="github" />
+  <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" revision="sc-v2" remote="github" />
+  <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-19.1" remote="github" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/extract-tools" name="LineageOS/android_prebuilts_extract-tools" revision="lineage-19.1" remote="github" clone-depth="1" />
+  <project path="prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_darwin-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,darwin,arm" revision="lineage-19.1" clone-depth="1" remote="github" />
+  <project path="prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_darwin-x86_arm_arm-linux-androideabi-4.9" groups="pdk,darwin,arm" revision="lineage-19.1" clone-depth="1" remote="github" />
+  <project path="prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_darwin-x86_x86_x86_64-linux-android-4.9" groups="pdk,darwin,x86" revision="lineage-19.1" clone-depth="1" remote="github" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" revision="lineage-19.1" clone-depth="1" remote="github" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" revision="lineage-19.1" clone-depth="1" remote="github" />
+  <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" revision="lineage-19.1" clone-depth="1" remote="github" />
+  <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" revision="lineage-19.1" remote="github" />
 
   <!-- Vendor -->
+  <project path="vendor/nxp/opensource/interfaces/nfc" name="LineageOS/android_vendor_nxp_interfaces_opensource_nfc" revision="lineage-19.1" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="LineageOS/android_vendor_nxp_opensource_external_libnfc-nci" revision="lineage-19.1" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/frameworks" name="LineageOS/android_vendor_nxp_opensource_frameworks" revision="lineage-19.1" remote="github" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="LineageOS/android_vendor_nxp_opensource_packages_apps_Nfc" revision="lineage-19.1" remote="github" />
+  <project path="vendor/nxp/opensource/pn5xx/halimpl" name="LineageOS/android_vendor_nxp_opensource_halimpl" revision="lineage-19.1-pn5xx" remote="github" />
+  <project path="vendor/nxp/opensource/pn5xx/hidlimpl" name="LineageOS/android_vendor_nxp_opensource_hidlimpl" revision="lineage-19.1-pn5xx" remote="github" />
+  <project path="vendor/nxp/opensource/sn100x/halimpl" name="LineageOS/android_vendor_nxp_opensource_halimpl" revision="lineage-19.1-sn100x" remote="github" />
+  <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="LineageOS/android_vendor_nxp_opensource_hidlimpl" revision="lineage-19.1-sn100x" remote="github" />
+  <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="LineageOS/android_vendor_qcom_opensource_fm-commonsys" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/interfaces" name="LineageOS/android_vendor_qcom_opensource_interfaces" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/power" name="LineageOS/android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="LineageOS/android_vendor_qcom_opensource_thermal-engine" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/usb" name="LineageOS/android_vendor_qcom_opensource_usb" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/vibrator" name="LineageOS/android_vendor_qcom_opensource_vibrator" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="LineageOS/android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,pdk" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="ArrowOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="refs/heads/arrow-12.1" remote="github" />
+  <project path="vendor/qcom/opensource/dataservices" name="ArrowOS/android_vendor_qcom_opensource_dataservices" revision="refs/heads/arrow-12.1" remote="github" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="ArrowOS/android_vendor_qcom_opensource_healthd-ext" revision="refs/heads/arrow-12.1" remote="github"/>
   <project path="vendor/qrcode/zxing" name="AshutoshSundresh/zxing-android-embedded" remote="github" revision="master" >
     <linkfile src="zxing-android-embedded/res-orig/*" dest="vendor/support/res-orig" />
     <linkfile src="zxing-android-embedded/res/*" dest="vendor/support/res-qr" />

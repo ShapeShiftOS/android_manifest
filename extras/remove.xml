@@ -69,20 +69,27 @@
   <!-- external -->
   <remove-project name="platform/external/e2fsprogs" />
   <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/fastrpc" />
+  <remove-project name="platform/external/libcxx" />
   <remove-project name="platform/external/mksh" />
+  <remove-project name="platform/external/openssh" />
   <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/sqlite" />
   <remove-project name="platform/external/tinycompress" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
 
   <!-- frameworks -->
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
   <remove-project name="platform/frameworks/libs/systemui" />
+  <remove-project name="platform/frameworks/opt/telephony" />
 
   <!-- hardware -->
   <remove-project name="platform/hardware/libhardware" />
   <remove-project name="platform/hardware/libhardware_legacy" />
   <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/qcom/audio" />
   <remove-project name="platform/hardware/qcom/camera" />
   <remove-project name="platform/hardware/qcom/display" />
   <remove-project name="platform/hardware/qcom/gps" />
@@ -99,6 +106,7 @@
   <remove-project name="platform/hardware/qcom/sdm845/vr" />
 
   <!--packages-->
+  <remove-project name="platform/packages/apps/Bluetooth" />
   <remove-project name="platform/packages/apps/Camera2" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/packages/apps/Nfc" />
@@ -108,10 +116,21 @@
   <remove-project name="platform/packages/apps/WallpaperPicker2" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
   <remove-project name="platform/packages/modules/adb" />
+  <remove-project name="platform/packages/modules/Permission" />
   <remove-project name="platform/packages/services/Telecomm" />
   <remove-project name="platform/packages/services/Telephony" />
 
+  <!-- prebuilts -->
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/darwin-x86/x86/x86_64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" />
+
   <!-- system -->
+  <remove-project name="platform/system/apex" />
+  <remove-project name="platform/system/bt" />
   <remove-project name="platform/system/core" />
   <remove-project name="platform/system/libhwbinder" />
   <remove-project name="platform/system/libziparchive" />
@@ -120,7 +139,6 @@
   <remove-project name="platform/system/sepolicy" />
   <remove-project name="platform/system/tools/mkbootimg" />
   <remove-project name="platform/system/update_engine" />
-
   <remove-project name="platform/system/vold" />
 
 </manifest>
