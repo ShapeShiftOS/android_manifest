@@ -17,6 +17,10 @@
            fetch="https://github.com/ShapeShiftOS-Devices"
            revision="refs/heads/android_12" />
 
+  <remote name="pixel-gitlab-self-hosted"
+          fetch="https://gitlab.pixelexperience.org/android"
+          revision="twelve" />
+
   <remote  name="github"
            fetch="https://github.com/" />
 

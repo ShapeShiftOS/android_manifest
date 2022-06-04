@@ -14,6 +14,7 @@
   <project path="external/ant-wireless/antradio-library" name="ArrowOS/android_external_ant-wireless_antradio-library" revision="refs/heads/arrow-12.0" remote="github" />
   <project path="external/ant-wireless/hidl" name="LineageOS/android_external_ant-wireless_hidl" revision="refs/heads/lineage-19.1" remote="github" />
   <project path="external/exfatprogs" name="ArrowOS/android_external_exfatprogs" revision="refs/heads/arrow-12.1" remote="github" />
+  <project path="external/faceunlock" name="external_faceunlock" remote="pixel-gitlab-self-hosted" />
   <project path="external/libcxx" name="LineageOS/android_external_libcxx" revision="refs/heads/lineage-19.1" remote="github" />
   <project path="external/ntfs-3g" name="ArrowOS/android_external_ntfs-3g" revision="refs/heads/arrow-12.1" remote="github" />
   <project path="external/openssh" name="LineageOS/android_external_openssh" revision="refs/heads/lineage-19.1" remote="github" />
@@ -31,6 +32,7 @@
   <project path="hardware/qcom-caf/vr" name="LineageOS/android_hardware_qcom_vr" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
 
   <!-- Packages -->
+  <project path="packages/apps/FaceUnlockService" name="PixelExperience/packages_apps_FaceUnlockService" revision="twelve" remote="github" />
   <project path="packages/apps/SimpleDeviceConfig" name="ProtonAOSP/android_packages_apps_SimpleDeviceConfig" revision="sc-v2" remote="github" />
   <project path="packages/resources/devicesettings" name="LineageOS/android_packages_resources_devicesettings" revision="lineage-19.1" remote="github" />
 
