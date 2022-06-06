@@ -57,6 +57,7 @@
   <project path="vendor/nxp/opensource/sn100x/hidlimpl" name="LineageOS/android_vendor_nxp_opensource_hidlimpl" revision="lineage-19.1-sn100x" remote="github" />
   <project path="vendor/qcom/opensource/audio" name="LineageOS/android_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="LineageOS/android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
   <project path="vendor/qcom/opensource/display" name="LineageOS/android_vendor_qcom_opensource_display" groups="qcom" revision="lineage-19.1" remote="github" />
   <project path="vendor/qcom/opensource/commonsys-intf/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
   <project path="vendor/qcom/opensource/commonsys/display" name="LineageOS/android_vendor_qcom_opensource_display-commonsys" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
