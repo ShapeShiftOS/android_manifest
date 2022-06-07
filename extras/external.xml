@@ -30,6 +30,7 @@
   <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" revision="lineage-18.1" remote="github" />
   <project path="hardware/qcom-caf/bt" name="LineageOS/android_hardware_qcom_bt" groups="qcom,pdk-qcom" revision="lineage-19.1-caf" remote="github" />
   <project path="hardware/qcom-caf/vr" name="LineageOS/android_hardware_qcom_vr" groups="qcom,pdk-qcom" revision="lineage-19.1" remote="github" />
+  <project path="hardware/qcom/sdm845/display" name="ArrowOS/android_hardware_qcom_sdm845_display" groups="generic_fs,qcom_sdm845" revision="refs/heads/arrow-12.1" remote="github" />
 
   <!-- Packages -->
   <project path="packages/apps/FaceUnlockService" name="PixelExperience/packages_apps_FaceUnlockService" revision="twelve" remote="github" />
