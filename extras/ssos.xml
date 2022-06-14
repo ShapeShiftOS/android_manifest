@@ -128,6 +128,9 @@
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ssos" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ssos" />
 
+  <!-- library repos -->
+  <project path="vendor/qrcode/zxing" name="AshutoshSundresh/zxing-android-embedded" remote="github" revision="master" />
+
   <!-- prebuilts -->
   <project path="prebuilts/abi-dumps/vndk" name="android_prebuilts_abi-dumps_vndk" remote="ssos" /> 
   <project path="prebuilts/abi-dumps/ndk" name="android_prebuilts_abi-dumps_ndk" remote="ssos" />   

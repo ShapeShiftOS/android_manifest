@@ -72,11 +72,5 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="ArrowOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="refs/heads/arrow-12.1" remote="github" />
   <project path="vendor/qcom/opensource/dataservices" name="ArrowOS/android_vendor_qcom_opensource_dataservices" revision="refs/heads/arrow-12.1" remote="github" />
   <project path="vendor/qcom/opensource/healthd-ext" name="ArrowOS/android_vendor_qcom_opensource_healthd-ext" revision="refs/heads/arrow-12.1" remote="github"/>
-  <project path="vendor/qrcode/zxing" name="AshutoshSundresh/zxing-android-embedded" remote="github" revision="master" >
-    <linkfile src="zxing-android-embedded/res-orig/*" dest="vendor/support/res-orig" />
-    <linkfile src="zxing-android-embedded/res/*" dest="vendor/support/res-qr" />
-    <linkfile src="zxing-android-embedded/src/com/google/zxing/*" dest="vendor/support/src/com/google/zxing" />
-    <linkfile src="zxing-android-embedded/src/com/journeyapps/barcodescanner/*" dest="vendor/support/src/com/journeyapps/barcodescanner" />
-  </project>
 
 </manifest>
