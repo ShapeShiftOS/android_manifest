@@ -29,7 +29,7 @@ Credits
 >> [Hint: This command updates the Ubuntu Packages List (Install Listing) and install the required version of Java]
 
 ```bash
-     sudo apt-get install openjdk-8-jdk
+sudo apt-get install openjdk-8-jdk
 ```
 
 ### Let that install and then proceed.
@@ -38,7 +38,7 @@ Credits
 >> [Hint: Running this command installs the other required packages to build android]
 
 ```bash
-     sudo apt-get update && sudo apt-get install bc git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk3.0-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline6-dev gcc-multilib maven tmux screen w3m ncftp adb fastboot repo python default-jdk
+sudo apt-get update && sudo apt-get install bc git-core gnupg flex bison gperf libsdl1.2-dev libesd0-dev libwxgtk3.0-dev squashfs-tools build-essential zip curl libncurses5-dev zlib1g-dev openjdk-8-jre openjdk-8-jdk pngcrush schedtool libxml2 libxml2-utils xsltproc lzop libc6-dev schedtool g++-multilib lib32z1-dev lib32ncurses5-dev lib32readline6-dev gcc-multilib maven tmux screen w3m ncftp adb fastboot repo python default-jdk
 ```
 
 ### Getting the source
@@ -54,45 +54,45 @@ Credits
 ##### Make directory for the repo binary
 
 ```bash
-      mkdir ~/bin
+mkdir ~/bin
 ```
 
 ##### Add directory for the repo binary to its path
 
 ```bash
-      PATH=~/bin:$PATH
+PATH=~/bin:$PATH
 ```
 
 ##### Downloading repo binary and placing it in the proper directory
 
 ```bash
-      curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
+curl http://commondatastorage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 ```
 
 ##### Giving the repo binary the proper permissions
 
 ```bash
-      chmod a+x ~/bin/repo
+chmod a+x ~/bin/repo
 ```
 
 ##### Creating directory for where the ShapeShiftOS repo will be stored and synced
 
 ```bash
-      mkdir ~/ssos
-      cd ~/ssos
+mkdir ~/ssos
+cd ~/ssos
 ```
 
 ##### Initializing the ShapeShiftOS repo and downloading the manifest
 
 ```bash
-      repo init -u https://github.com/ShapeShiftOS/android_manifest.git -b android_12
+repo init -u https://github.com/ShapeShiftOS/android_manifest.git -b android_12
 ```
 
 ##### Syncing the source
 >> [Hint: This might take a long time as the source is ~75GB]
 
 ```bash
-      repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
+repo sync -c --force-sync --optimized-fetch --no-tags --no-clone-bundle --prune -j$(nproc --all)
 ```
 
 ### Building the ShapeShiftOS ROM
@@ -107,37 +107,37 @@ Credits
 - To set up CCache, follow the following:
 
 ```bash
-        echo "export USE_CCACHE=1" >> ~/.bashrc
+echo "export USE_CCACHE=1" >> ~/.bashrc
 ```
 
 ##### To build ShapeShiftOS ROM
 
 ```bash
-      cd ~/ssos
-      source build/envsetup.sh
-      lunch ssos_<devicecodename>-userdebug
-      make bacon -j$(nproc --all) | tee log.txt
+cd ~/ssos
+source build/envsetup.sh
+lunch ssos_<devicecodename>-userdebug
+make bacon -j$(nproc --all) | tee log.txt
 ```
 
 ##### Obtaining the zip created from the build process
 >> To get the zip file that has been built, navigate to the following directory and find for the zip file:
 
 ```bash
-      cd ~/ssos/out/target/product/<devicename>
+cd ~/ssos/out/target/product/<devicename>
 ```
 
 OR
 
 ```bash
-      cd $OUT
+cd $OUT
 ```
 
 >> If you found it, then congratulations! If you didn't, try retrying the build process but before doing so, ensure you do the following to make sure your next build is clean;
 
 ```bash
-      cd ~/ssos
-      make clean
-      repo sync --force-sync
+cd ~/ssos
+make clean
+repo sync --force-sync
 ```
 
 >> After doing so, redo everything stated from the Building Section.
