@@ -45,6 +45,7 @@
   <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" groups="pdk,linux,arm" revision="lineage-19.1" clone-depth="1" remote="github" />
   <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_arm_arm-linux-androideabi-4.9" groups="pdk,linux,arm" revision="lineage-19.1" clone-depth="1" remote="github" />
   <project path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" name="LineageOS/android_prebuilts_gcc_linux-x86_x86_x86_64-linux-android-4.9" groups="pdk,linux,x86" revision="lineage-19.1" clone-depth="1" remote="github" />
+  <project path="prebuilts/clang/host/linux-x86/dora-clang" name="zlatanr/dora-clang-1" remote="gitlab" revision="master" clone-depth="1" />
   <project path="tools/extract-utils" name="LineageOS/android_tools_extract-utils" revision="lineage-19.1" remote="github" />
 
   <!-- Vendor -->
