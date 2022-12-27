@@ -2,13 +2,31 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
-  <default revision="refs/tags/android-13.0.0_r18"
-           remote="aosp"
-           sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r18"/>
+  <remote  name="ssos"
+           fetch="https://github.com/ShapeShiftOS"
+           revision="refs/heads/android_13" />
+
+  <remote  name="tequila"
+           fetch="https://github.com/tequilaOS"
+           revision="refs/heads/tortilla" />
+
+  <remote  name="tequila-gitlab"
+           fetch="https://gitlab.com/tequilaOS"
+           revision="refs/heads/tortilla" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com/" />
+
+  <default revision="refs/tags/android-13.0.0_r18"
+           remote="aosp" />
+
+  <superproject name="platform/superproject" remote="aosp" revision="android-13.0.0_r18" />
   <contactinfo bugurl="go/repo-bug" />
   <!-- BEGIN open-source projects -->
   <project path="build/make" name="platform/build" groups="pdk" >
@@ -1183,4 +1201,13 @@
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
   <!-- END open-source projects -->
+
+  <!-- Remove unused AOSP repos -->
+  <include name="extras/remove.xml" />
+
+  <!-- Add all tracked SSOS repos -->
+  <include name="extras/ssos.xml" />
+
+  <!-- Add all tracked external repos -->
+  <include name="extras/external.xml" />
 </manifest>
