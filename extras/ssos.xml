@@ -30,13 +30,17 @@
   <project path="device/ssos/sepolicy" name="android_device_ssos_sepolicy" remote="ssos"  />
 
   <!-- frameworks -->
+  <project path="frameworks/av" name="android_frameworks_av" remote="ssos" />
   <project path="frameworks/base" name="android_frameworks_base" remote="ssos" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="ssos" />
 
   <!-- hardware -->
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ssos" />
 
   <!-- packages -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ssos" />
+  <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="ssos" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ssos" />
 
   <!-- prebuilts -->
   <project path="prebuilts/tools-ssos" name="android_prebuilts_tools-ssos" remote="ssos" />

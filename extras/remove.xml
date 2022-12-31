@@ -76,12 +76,16 @@
 
   <!-- frameworks -->
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/native" />
 
   <!-- hardware -->
   <remove-project name="platform/hardware/libhardware" />
 
   <!-- packages -->
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
+  <remove-project name="platform/packages/services/Telephony" />
 
   <!-- system -->
   <remove-project name="platform/system/sepolicy" />
