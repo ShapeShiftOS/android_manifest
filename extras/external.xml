@@ -6,8 +6,13 @@
   <project path="external/ant-wireless/ant_native" name="platform_external_ant-wireless_ant_native" remote="tequila" />
   <project path="external/ant-wireless/ant_service" name="platform_external_ant-wireless_ant_service" remote="tequila" />
   <project path="external/ant-wireless/hidl" name="platform_external_ant-wireless_hidl" remote="tequila" />
+  <project path="external/e2fsprogs" name="platform_external_e2fsprogs" remote="tequila" />
+  <project path="external/gptfdisk" name="platform_external_gptfdisk" remote="tequila" />
   <project path="external/json-c" name="platform_external_json-c" remote="tequila" />
+  <project path="external/mksh" name="platform_external_mksh" remote="tequila" />
+  <project path="external/selinux" name="platform_external_selinux" remote="tequila" />
   <project path="external/tinycompress" name="platform_external_tinycompress" remote="tequila" />
+  <project path="external/tinyxml" name="platform_external_tinyxml" remote="tequila" />
 
   <!-- hardware -->
   <project path="hardware/qcom-caf/bootctrl" name="platform_hardware_qcom-caf_bootctrl" groups="qcom,pdk-qcom" remote="tequila" />
