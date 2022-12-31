@@ -46,6 +46,7 @@
   <project path="prebuilts/tools-ssos" name="android_prebuilts_tools-ssos" remote="ssos" />
 
   <!-- system -->
+  <project path="system/core" name="android_system_core" remote="ssos" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="ssos" />
 
   <!-- vendor -->

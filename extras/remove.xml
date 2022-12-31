@@ -88,6 +88,7 @@
   <remove-project name="platform/packages/services/Telephony" />
 
   <!-- system -->
+  <remove-project name="platform/system/core" />
   <remove-project name="platform/system/sepolicy" />
 
 </manifest>
