@@ -57,6 +57,7 @@
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="tequila" />
   <project path="vendor/google/gms" name="platform_vendor_google_gms" remote="tequila-gitlab" />
   <project path="vendor/google/pixel" name="platform_vendor_google_pixel" remote="tequila-gitlab" />
+  <project path="vendor/qrcode/zxing" name="AshutoshSundresh/zxing-android-embedded" remote="github" revision="master" />
 
   <!-- vendor/qcom -->
   <project path="vendor/qcom/opensource/audio" name="platform_vendor_qcom_opensource_audio" groups="qcom,pdk-qcom" remote="tequila" />
