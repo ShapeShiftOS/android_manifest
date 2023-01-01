@@ -13,9 +13,9 @@
            fetch="https://github.com/tequilaOS"
            revision="refs/heads/tortilla" />
 
-  <remote  name="tequila-gitlab"
-           fetch="https://gitlab.com/tequilaOS"
-           revision="refs/heads/tortilla" />
+  <remote  name="ssos-gitlab"
+           revision="android_13"
+           fetch="https://gitlab.com/AshutoshSundresh/" />
 
   <remote  name="github"
            fetch="https://github.com/" />

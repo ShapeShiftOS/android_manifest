@@ -40,6 +40,7 @@
   <!-- packages -->
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="ssos" />
   <project path="packages/apps/SettingsIntelligence" name="android_packages_apps_SettingsIntelligence" remote="ssos" />
+  <project path="packages/apps/SimpleDeviceConfig" name="android_packages_apps_SimpleDeviceConfig" remote="ssos" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="ssos" />
 
   <!-- prebuilts -->
@@ -50,6 +51,8 @@
   <project path="system/sepolicy" name="android_system_sepolicy" remote="ssos" />
 
   <!-- vendor -->
+  <project path="vendor/gms" name="android_vendor_gms" remote="ssos-gitlab" clone-depth="1" />
+  <project path="vendor/lawnicons" name="android_vendor_lawnicons" remote="ssos" />
   <project path="vendor/ssos" name="android_vendor_ssos" remote="ssos" />
   <project path="vendor/support" name="android_vendor_support" remote="ssos" />
 
