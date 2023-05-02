@@ -3,6 +3,10 @@ ShapeShiftOS
 
 <img src="https://i.imgur.com/CJiO8Bk.png"> 
 
+
+ShapeShiftOS is an Android-based custom ROM that aims to offer a fresh and exciting take on the Android operating system. The ROM is built on top of the Android Open Source Project (AOSP) and is designed to be stable, fast, and feature-rich.
+
+
 Credits
 -------
 * [**Extended-UI**](https://github.com/Extended-UI)
